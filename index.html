@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>いわてセミナー暦</title>
+<meta name="description" content="岩手県内の商工会議所・商工会・県・支援機関・金融機関などが開く、企業向けセミナーをまとめて検索できるポータルです。">
+<meta property="og:title" content="いわてセミナー暦">
+<meta property="og:description" content="岩手県内の企業向けセミナーをまとめて検索">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Old+Mincho:wght@600;900&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: 検索バー → 絞り込み → 一覧／月表示の切替。藍の帳面に、締切だけ朱で示す */
+:root{
+  --bg:#f6f7f9; --paper:#ffffff; --ink:#1c2430; --muted:#5d6878; --line:#d9dee6;
+  --ai:#2c4a7c; --ai-soft:#e6ecf6; --shu:#b5432f; --ok:#2f6b4f;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+  --c-keiei:#2c4a7c; --c-jinji:#7a4f9a; --c-dx:#1f7a7a; --c-hanro:#a0662a; --c-sec:#b5432f; --c-sangyo:#4f6b2f; --c-sogyo:#8a6d1f;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#12161d; --paper:#1a2029; --ink:#e4e8ef; --muted:#9aa5b5; --line:#2e3644;
+  --ai:#8fb0e6; --ai-soft:#22304a; --shu:#ec8a74; --ok:#7cc4a0;
+  --c-keiei:#8fb0e6; --c-jinji:#c4a0e0; --c-dx:#6cc8c8; --c-hanro:#e0aa6c; --c-sec:#ec8a74; --c-sangyo:#a8c47c; --c-sogyo:#e0c46c; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.65}
+[hidden]{display:none!important}
+.wrap{max-width:1040px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+header h1{font-family:var(--display);font-weight:900;font-size:clamp(1.8rem,4.5vw,2.6rem);margin:0;letter-spacing:.03em}
+header p{margin:.3rem 0 0;color:var(--muted);max-width:64ch}
+.meta{font-size:.82rem;color:var(--muted)}
+.search{display:flex;gap:8px}
+.search input{flex:1;min-width:0;font:inherit;font-size:1rem;padding:10px 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
+.filters{display:grid;gap:10px}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.row .lab{font-size:.78rem;color:var(--muted);letter-spacing:.08em;min-width:3.5em}
+.chip{border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:.84rem;cursor:pointer;display:inline-flex;gap:6px;align-items:center}
+.chip[aria-pressed="true"]{background:var(--ai);border-color:var(--ai);color:var(--paper)}
+.chip:focus-visible,.tab:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ai);outline-offset:2px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block;flex:none}
+label.toggle{font-size:.86rem;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
+.views{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.tabs{display:flex;gap:4px}
+.tab{font-family:var(--display);font-weight:600;font-size:1.1rem;background:none;border:0;border-bottom:3px solid transparent;padding:6px 12px;color:var(--muted);cursor:pointer}
+.tab[aria-selected="true"]{color:var(--ink);border-color:var(--ai)}
+.count{font-size:.85rem;color:var(--muted);padding-bottom:8px}
+.monthnav{display:flex;gap:10px;align-items:center;margin-bottom:8px}
+.monthnav b{font-family:var(--display);font-size:1.15rem;min-width:7.5em;text-align:center}
+.monthnav button{font:inherit;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:4px;padding:2px 10px;cursor:pointer}
+.cal-scroll{overflow-x:auto}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(96px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--paper);min-width:680px}
+.dow{font-size:.75rem;letter-spacing:.1em;color:var(--muted);padding:6px 8px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dow.sun{color:var(--shu)} .dow.sat{color:var(--ai)}
+.cell{min-height:92px;padding:6px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px;min-width:0}
+.cell.out{background:var(--bg)}
+.cell .n{font-family:var(--mono);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cell.today .n{background:var(--shu);color:var(--paper);border-radius:4px;padding:0 5px;align-self:flex-start}
+.ev{width:100%;text-align:left;font:inherit;font-size:.74rem;line-height:1.35;background:var(--ai-soft);color:var(--ink);border:0;border-left:3px solid var(--cc);border-radius:3px;padding:3px 5px;cursor:pointer;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.ev.past{opacity:.5}
+.list{display:grid;gap:10px}
+.item{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:92px 1fr;gap:4px 16px;scroll-margin-top:16px}
+.item.flash{outline:2px solid var(--ai)}
+.item.past{opacity:.55}
+.d{font-family:var(--mono);font-variant-numeric:tabular-nums;line-height:1.3}
+.d b{display:block;font-size:1.35rem;font-weight:500}
+.d span{font-size:.78rem;color:var(--muted)}
+.body{min-width:0;display:grid;gap:4px}
+.title{font-weight:700;font-size:1rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px;font-size:.74rem}
+.tag{border:1px solid var(--line);border-radius:3px;padding:0 6px;color:var(--muted)}
+.tag.cat{color:var(--cc);border-color:var(--cc)}
+.dl{font-size:.8rem}
+.dl.open{color:var(--ok)} .dl.closed{color:var(--muted)} .dl.soon{color:var(--shu);font-weight:700}
+.info{font-size:.85rem;color:var(--muted);overflow-wrap:anywhere}
+.links{display:flex;flex-wrap:wrap;gap:14px;font-size:.85rem}
+a{color:var(--ai)}
+.empty{background:var(--paper);border:1px dashed var(--line);border-radius:6px;padding:28px;text-align:center;color:var(--muted)}
+footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:grid;gap:6px;max-width:76ch}
+@media (max-width:560px){.item{grid-template-columns:1fr}.d b{display:inline;margin-right:6px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>いわてセミナー暦</h1>
+    <p>岩手県内の商工会議所・商工会、県や市町村、産業支援機関、金融機関などが開く企業向けセミナーを、まとめて探せるようにしました。</p>
+    <div class="meta" id="updated">読み込み中…</div>
+  </header>
+
+  <div class="search">
+    <label for="q" hidden>キーワード</label>
+    <input id="q" type="search" placeholder="キーワードで探す（例：補助金、サイバー、一関、税制）" autocomplete="off">
+  </div>
+
+  <div class="filters">
+    <div class="row" id="f-cat"><span class="lab">分野</span></div>
+    <div class="row" id="f-area"><span class="lab">地域</span></div>
+    <div class="row">
+      <label class="toggle"><input type="checkbox" id="openOnly"> 申込受付中のみ</label>
+      <label class="toggle"><input type="checkbox" id="showPast"> 終了したものも表示</label>
+    </div>
+  </div>
+
+  <section style="display:grid;gap:12px">
+    <div class="views">
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="v-list" aria-selected="true">一覧</button>
+        <button class="tab" role="tab" id="v-cal" aria-selected="false">月表示</button>
+      </div>
+      <div class="count" id="count"></div>
+    </div>
+    <div id="listView" class="list"></div>
+    <div id="calView" hidden>
+      <div class="monthnav"><button id="prev" aria-label="前の月">‹</button><b id="mlabel"></b><button id="next" aria-label="次の月">›</button></div>
+      <div class="cal-scroll"><div class="cal" id="cal"></div></div>
+    </div>
+  </section>
+
+  <footer>
+    <div>掲載情報は各機関の公開告知をもとに毎週更新しています。日時・会場・申込方法は変わることがあります。<b>申込の前に必ず「告知ページ」で最新情報をご確認ください。</b></div>
+    <div>掲載の訂正・削除のご依頼、掲載してほしいセミナーの情報は、運営者までお知らせください。</div>
+    <div>運営：Nolaworks（岩手県一関市）</div>
+  </footer>
+</div>
+
+<script>
+const CATS={
+  keiei:{label:"経営・財務",c:"--c-keiei"},
+  jinji:{label:"人事・労務",c:"--c-jinji"},
+  dx:{label:"DX・IT",c:"--c-dx"},
+  sec:{label:"サイバーセキュリティ",c:"--c-sec"},
+  hanro:{label:"販路・海外",c:"--c-hanro"},
+  sogyo:{label:"創業・事業承継",c:"--c-sogyo"},
+  sangyo:{label:"業種別",c:"--c-sangyo"}
+};
+const AREAS=["盛岡","県南","沿岸","県北","オンライン"];
+const DOW="日月火水木金土";
+const _n=new Date(); const TODAY=new Date(_n.getFullYear(),_n.getMonth(),_n.getDate());
+const p=n=>String(n).padStart(2,"0");
+const dObj=s=>{const[a,b,c]=s.split("-").map(Number);return new Date(a,b-1,c)};
+const keyOf=d=>`${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`;
+let EV=[], cats=new Set(), areas=new Set(), view="list", calMonth=new Date(TODAY.getFullYear(),TODAY.getMonth(),1);
+
+function isPast(e){return dObj(e.date)<TODAY}
+function dlState(e){
+  if(!e.deadline) return {cls:"open",txt:"申込：定員まで／随時（告知ページで確認）",open:true};
+  const d=dObj(e.deadline), diff=(d-TODAY)/864e5, md=(d.getMonth()+1)+"/"+d.getDate();
+  if(diff<0) return {cls:"closed",txt:`申込締切済（${md}）`,open:false};
+  if(diff<=7) return {cls:"soon",txt:`締切間近：${md}`,open:true};
+  return {cls:"open",txt:`申込締切：${md}`,open:true};
+}
+function gcal(e){
+  const d=e.date.replace(/-/g,"");
+  const dates=e.start?`${d}T${e.start.replace(":","")}00/${d}T${(e.end||e.start).replace(":","")}00`:`${d}/${d}`;
+  const q=new URLSearchParams({action:"TEMPLATE",text:e.title,dates,details:`主催：${e.organizer}\n${e.note||""}\n${e.url}`,location:e.venue,ctz:"Asia/Tokyo"});
+  return "https://calendar.google.com/calendar/render?"+q;
+}
+function chip(parent,label,color,onClick){
+  const b=document.createElement("button");b.className="chip";b.type="button";b.setAttribute("aria-pressed","false");
+  b.innerHTML=(color?`<span class="dot" style="background:var(${color})"></span>`:"");b.append(label);
+  b.onclick=()=>{onClick();b.setAttribute("aria-pressed",b.getAttribute("aria-pressed")!=="true");render()};
+  parent.appendChild(b);
+}
+Object.entries(CATS).forEach(([k,v])=>chip(document.getElementById("f-cat"),v.label,v.c,()=>cats.has(k)?cats.delete(k):cats.add(k)));
+AREAS.forEach(a=>chip(document.getElementById("f-area"),a,null,()=>areas.has(a)?areas.delete(a):areas.add(a)));
+["q","openOnly","showPast"].forEach(id=>document.getElementById(id).addEventListener("input",render));
+function setView(v){view=v;document.getElementById("v-list").setAttribute("aria-selected",v==="list");document.getElementById("v-cal").setAttribute("aria-selected",v==="cal");
+  document.getElementById("listView").hidden=v!=="list";document.getElementById("calView").hidden=v!=="cal";render()}
+document.getElementById("v-list").onclick=()=>setView("list");
+document.getElementById("v-cal").onclick=()=>setView("cal");
+document.getElementById("prev").onclick=()=>{calMonth.setMonth(calMonth.getMonth()-1);render()};
+document.getElementById("next").onclick=()=>{calMonth.setMonth(calMonth.getMonth()+1);render()};
+
+function filtered(forCal){
+  const q=document.getElementById("q").value.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const openOnly=document.getElementById("openOnly").checked, showPast=document.getElementById("showPast").checked;
+  return EV.filter(e=>{
+    if(cats.size&&!cats.has(e.category))return false;
+    if(areas.size&&!areas.has(e.area))return false;
+    if(!forCal&&!showPast&&isPast(e))return false;
+    if(openOnly&&(isPast(e)||!dlState(e).open))return false;
+    if(q.length){const hay=[e.title,e.organizer,e.venue,e.area,e.note,CATS[e.category]?.label].join(" ").toLowerCase();if(!q.every(w=>hay.includes(w)))return false}
+    return true;
+  });
+}
+function card(e){
+  const d=dObj(e.date), st=dlState(e), cc=`var(${(CATS[e.category]||CATS.keiei).c})`;
+  const a=document.createElement("article");a.className="item"+(isPast(e)?" past":"");a.id="e-"+e.id;
+  a.innerHTML=`<div class="d"><b>${d.getMonth()+1}/${d.getDate()}</b><span>（${DOW[d.getDay()]}）${e.start?e.start+(e.end?"–"+e.end:""):"時刻は告知ページで"}</span></div>
+  <div class="body"><div class="title"></div><div class="tags"><span class="tag cat" style="--cc:${cc}"></span><span class="tag ar"></span><span class="tag fee"></span></div>
+  <div class="info"></div><div class="dl ${st.cls}">${st.txt}</div><div class="links"></div></div>`;
+  a.querySelector(".title").textContent=e.title;
+  a.querySelector(".cat").textContent=(CATS[e.category]||{label:"その他"}).label;
+  a.querySelector(".ar").textContent=e.area;a.querySelector(".fee").textContent=e.fee;
+  a.querySelector(".info").textContent=`${e.organizer}｜${e.venue}${e.note?"｜"+e.note:""}`;
+  const L=a.querySelector(".links");
+  const l1=document.createElement("a");l1.href=e.url;l1.target="_blank";l1.rel="noopener";l1.textContent="告知ページ";L.appendChild(l1);
+  if(!isPast(e)){const l2=document.createElement("a");l2.href=gcal(e);l2.target="_blank";l2.rel="noopener";l2.textContent="Googleカレンダーに追加";L.appendChild(l2)}
+  return a;
+}
+function render(){
+  if(view==="list"){
+    const evs=filtered(false);const L=document.getElementById("listView");L.innerHTML="";
+    document.getElementById("count").textContent=`${evs.length}件`;
+    if(!evs.length){L.innerHTML='<div class="empty">条件に合うセミナーはありません。キーワードや絞り込みを変えてみてください。</div>';return}
+    evs.forEach(e=>L.appendChild(card(e)));
+  }else{
+    const evs=filtered(true), y=calMonth.getFullYear(), m=calMonth.getMonth();
+    document.getElementById("mlabel").textContent=`${y}年${m+1}月`;
+    document.getElementById("count").textContent=`${evs.filter(e=>dObj(e.date).getMonth()===m&&dObj(e.date).getFullYear()===y).length}件`;
+    const C=document.getElementById("cal");C.innerHTML="";
+    [...DOW].forEach((d,i)=>{const h=document.createElement("div");h.className="dow"+(i==0?" sun":i==6?" sat":"");h.textContent=d;C.appendChild(h)});
+    const first=new Date(y,m,1),start=new Date(first);start.setDate(1-first.getDay());
+    for(let i=0;i<42;i++){
+      const d=new Date(start);d.setDate(start.getDate()+i);if(i>=35&&d.getMonth()!==m)break;
+      const c=document.createElement("div");c.className="cell"+(d.getMonth()!==m?" out":"")+(+d===+TODAY?" today":"");
+      c.innerHTML=`<span class="n">${d.getDate()}</span>`;
+      evs.filter(e=>e.date===keyOf(d)).forEach(e=>{
+        const b=document.createElement("button");b.className="ev"+(isPast(e)?" past":"");b.style.setProperty("--cc",`var(${(CATS[e.category]||CATS.keiei).c})`);
+        b.textContent=(e.start?e.start+" ":"")+e.title;b.title=e.title;
+        b.onclick=()=>{document.getElementById("showPast").checked=true;setView("list");const t=document.getElementById("e-"+e.id);if(t){t.scrollIntoView({behavior:"smooth",block:"center"});t.classList.add("flash");setTimeout(()=>t.classList.remove("flash"),1600)}};
+        c.appendChild(b);
+      });
+      C.appendChild(c);
+    }
+  }
+}
+fetch("data/events.json",{cache:"no-cache"}).then(r=>r.json()).then(j=>{
+  EV=j.events.slice().sort((a,b)=>(a.date+(a.start||"")).localeCompare(b.date+(b.start||"")));
+  const u=dObj(j.updated);document.getElementById("updated").textContent=`最終更新：${u.getFullYear()}年${u.getMonth()+1}月${u.getDate()}日　／　掲載 ${EV.length}件`;
+  render();
+}).catch(()=>{document.getElementById("updated").textContent="データを読み込めませんでした。時間をおいて再読み込みしてください。"});
+</script>
+</body>
+</html>

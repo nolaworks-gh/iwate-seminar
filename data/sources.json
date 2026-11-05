@@ -1,0 +1,42 @@
+{
+  "note": "毎週の収集で巡回する情報源。url が null のものは収集時に公式サイトを検索して確かめ、見つかれば url を埋めること。",
+  "sources": [
+    {"group": "集約サイト", "name": "J-Net21 支援情報ヘッドライン（セミナーRSS・岩手県分）", "url": "https://j-net21.smrj.go.jp/snavi/event/event.xml"},
+
+    {"group": "商工会議所・商工会", "name": "盛岡商工会議所", "url": "https://www.ccimorioka.or.jp/news/"},
+    {"group": "商工会議所・商工会", "name": "盛岡商工会議所（関係機関からのお知らせ）", "url": "https://www.ccimorioka.or.jp/information/"},
+    {"group": "商工会議所・商工会", "name": "一関商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "北上商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "花巻商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "水沢商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "宮古商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "釜石商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "大船渡商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "久慈商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "二戸商工会議所", "url": null},
+    {"group": "商工会議所・商工会", "name": "岩手県商工会連合会", "url": null},
+
+    {"group": "県・市町村・支援機関", "name": "岩手県（イベント・講座）", "url": "https://www.pref.iwate.jp/event/kouza/"},
+    {"group": "県・市町村・支援機関", "name": "いわて産業振興センター（岩手県よろず支援拠点）", "url": "https://www.joho-iwate.or.jp/"},
+    {"group": "県・市町村・支援機関", "name": "盛岡市産業支援センター", "url": "https://www.moriokaisc.jp/category/news/"},
+    {"group": "県・市町村・支援機関", "name": "岩手県中小企業団体中央会", "url": null},
+    {"group": "県・市町村・支援機関", "name": "岩手県工業技術センター", "url": null},
+    {"group": "県・市町村・支援機関", "name": "岩手県南技術研究センター（一関）", "url": null},
+    {"group": "県・市町村・支援機関", "name": "岩手県事業承継・引継ぎ支援センター", "url": "https://iwate-hikitsugi.go.jp/"},
+    {"group": "県・市町村・支援機関", "name": "岩手県中小企業活性化協議会", "url": "https://iwate-kasseikyo.go.jp/"},
+    {"group": "県・市町村・支援機関", "name": "ジェトロ岩手", "url": null},
+    {"group": "県・市町村・支援機関", "name": "岩手働き方改革推進支援センター", "url": null},
+    {"group": "県・市町村・支援機関", "name": "東北経済産業局（東北全域対象のセミナーのみ）", "url": null},
+
+    {"group": "金融機関・公庫", "name": "岩手銀行", "url": null},
+    {"group": "金融機関・公庫", "name": "東北銀行", "url": null},
+    {"group": "金融機関・公庫", "name": "北日本銀行", "url": null},
+    {"group": "金融機関・公庫", "name": "県内信用金庫（盛岡・宮古・一関・北上・花巻・水沢・気仙沼…）", "url": null},
+    {"group": "金融機関・公庫", "name": "日本政策金融公庫（盛岡・一関・宮古・二戸支店のセミナー）", "url": "https://direct.jfc.go.jp/w110_SeminarList"},
+
+    {"group": "民間・団体", "name": "岩手県中小企業家同友会", "url": null},
+    {"group": "民間・団体", "name": "盛岡法人会ほか県内法人会", "url": "http://iwate-ho.jp/morioka/"},
+    {"group": "民間・団体", "name": "岩手大学 研究支援・産学連携センター／INS", "url": "https://www.ccrd.iwate-u.ac.jp/"},
+    {"group": "民間・団体", "name": "岩手県立大学 地域連携", "url": null}
+  ]
+}
