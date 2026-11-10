@@ -1,22 +1,6 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-08",
   "events": [
-    {
-      "date": "2026-11-06",
-      "start": "14:00",
-      "end": "15:30",
-      "title": "食品製造業の生産性向上セミナー2026",
-      "organizer": "東北経済産業局・中小機構東北本部",
-      "venue": "オンライン（Teams）",
-      "area": "オンライン",
-      "fee": "無料",
-      "deadline": "2026-11-04",
-      "category": "sangyo",
-      "url": "https://j-net21.smrj.go.jp/snavi/articles/195302",
-      "note": "食品工場の自動化・省力化、ROI算出、導入事例",
-      "added": "2026-11-05",
-      "id": "2026-11-06-01"
-    },
     {
       "date": "2026-11-11",
       "start": "13:30",
@@ -32,6 +16,22 @@
       "note": "就業規則の整備、10月施行のカスハラ対策義務化。申込はFAXかメール",
       "added": "2026-11-05",
       "id": "2026-11-11-02"
+    },
+    {
+      "id": "2026-11-11-hatarakikata-kyuyo",
+      "date": "2026-11-11",
+      "start": "14:00",
+      "end": "14:30",
+      "title": "最低賃金改定前に確認すべき給与計算のポイント",
+      "organizer": "岩手働き方改革推進支援センター",
+      "venue": "オンライン（Zoom）",
+      "area": "オンライン",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
+      "note": "30分のオンラインセミナー。最低賃金引上げに合わせた給与計算の確認点",
+      "added": "2026-11-08"
     },
     {
       "date": "2026-11-12",
@@ -67,6 +67,22 @@
     },
     {
       "date": "2026-11-17",
+      "start": null,
+      "end": null,
+      "title": "起業家として知っておきたい知的財産",
+      "organizer": "盛岡市産業支援センター",
+      "venue": "盛岡市産業支援センター（開運橋センタービル3F）",
+      "area": "盛岡",
+      "fee": "チラシ参照",
+      "deadline": null,
+      "category": "sogyo",
+      "url": "https://www.moriokaisc.jp/2026/10/09/%e2%89%aanew%e2%89%ab%e3%80%90%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e3%82%92%e9%96%8b%e5%82%ac%e3%81%84%e3%81%9f%e3%81%97%e3%81%be%e3%81%99%e3%80%9111-17%e7%81%ab%ef%bc%9a%e8%b5%b7%e6%a5%ad%e5%ae%b6/",
+      "note": "時刻・定員はリンク先のチラシ画像に記載",
+      "added": "2026-11-05",
+      "id": "2026-11-17-07"
+    },
+    {
+      "date": "2026-11-17",
       "start": "10:00",
       "end": "12:00",
       "title": "介護 労働環境整備・改善セミナー（1回目）",
@@ -98,22 +114,6 @@
       "id": "2026-11-17-06"
     },
     {
-      "date": "2026-11-17",
-      "start": null,
-      "end": null,
-      "title": "起業家として知っておきたい知的財産",
-      "organizer": "盛岡市産業支援センター",
-      "venue": "盛岡市産業支援センター（開運橋センタービル3F）",
-      "area": "盛岡",
-      "fee": "チラシ参照",
-      "deadline": null,
-      "category": "sogyo",
-      "url": "https://www.moriokaisc.jp/2026/10/09/%e2%89%aanew%e2%89%ab%e3%80%90%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e3%82%92%e9%96%8b%e5%82%ac%e3%81%84%e3%81%9f%e3%81%97%e3%81%be%e3%81%99%e3%80%9111-17%e7%81%ab%ef%bc%9a%e8%b5%b7%e6%a5%ad%e5%ae%b6/",
-      "note": "時刻・定員はリンク先のチラシ画像に記載",
-      "added": "2026-11-05",
-      "id": "2026-11-17-07"
-    },
-    {
       "date": "2026-11-18",
       "start": "13:30",
       "end": "15:30",
@@ -130,20 +130,52 @@
       "id": "2026-11-18-08"
     },
     {
+      "id": "2026-11-18-hatarakikata-koyou",
+      "date": "2026-11-18",
+      "start": "14:00",
+      "end": "14:30",
+      "title": "人材確保のための雇用管理改善対策",
+      "organizer": "岩手働き方改革推進支援センター",
+      "venue": "オンライン（Zoom）",
+      "area": "オンライン",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
+      "note": "30分のオンラインセミナー。人手確保に向けた雇用管理の見直し",
+      "added": "2026-11-08"
+    },
+    {
       "date": "2026-11-19",
       "start": "13:30",
       "end": "15:30",
-      "title": "女性活躍推進オンラインセミナー",
+      "title": "女性活躍推進オンラインセミナー（ステップアップ支援セミナー）",
       "organizer": "岩手県",
       "venue": "オンライン（Zoom）",
       "area": "オンライン",
       "fee": "無料",
       "deadline": "2026-11-12",
       "category": "jinji",
-      "url": "https://j-net21.smrj.go.jp/snavi2/articles/189688",
-      "note": "いわて女性活躍企業等認定の要件研修。締切は開催1週間前",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/seishounendanjo/1004930/1044171/1100365.html",
+      "note": "次の役割やキャリアに悩む中堅女性従業員向け。定員70名、締切は開催1週間前",
       "added": "2026-11-05",
       "id": "2026-11-19-09"
+    },
+    {
+      "id": "2026-11-25-hatarakikata-driver",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "end": "14:30",
+      "title": "自動車運転者の改善基準告示（3）",
+      "organizer": "岩手働き方改革推進支援センター",
+      "venue": "オンライン（Zoom）",
+      "area": "オンライン",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
+      "note": "運送業などドライバーを雇う事業者向けの労働時間ルール解説。30分",
+      "added": "2026-11-08"
     },
     {
       "date": "2026-11-25",
@@ -160,6 +192,22 @@
       "note": "講師は日本公庫盛岡支店。16時から希望者に融資相談",
       "added": "2026-11-05",
       "id": "2026-11-25-10"
+    },
+    {
+      "id": "2026-11-26-josei-shushu",
+      "date": "2026-11-26",
+      "start": "14:00",
+      "end": "16:00",
+      "title": "女性活躍推進参集型セミナー（第2回）",
+      "organizer": "岩手県",
+      "venue": "キオクシア アイーナ 501A",
+      "area": "盛岡",
+      "fee": "無料",
+      "deadline": "2026-11-19",
+      "category": "jinji",
+      "url": "https://j-net21.smrj.go.jp/snavi2/articles/189687",
+      "note": "経営者・人事担当向けの会場型。いわて女性活躍企業等認定の要件研修に該当、定員30名",
+      "added": "2026-11-08"
     },
     {
       "date": "2026-11-27",
@@ -226,18 +274,34 @@
       "id": "2026-12-02-14"
     },
     {
+      "id": "2026-12-03-jidosha-bunkai",
+      "date": "2026-12-03",
+      "start": "13:00",
+      "end": "16:20",
+      "title": "自動車部品分解展示場見学研修（岩手拠点）",
+      "organizer": "いわて産業振興センターほか",
+      "venue": "北上市産業支援センター",
+      "area": "県南",
+      "fee": "無料",
+      "deadline": "2026-11-26",
+      "category": "sangyo",
+      "url": "https://j-net21.smrj.go.jp/snavi2/articles/194738",
+      "note": "分解された自動車部品を見学し業界・技術動向を学ぶ。次世代車市場への参入を考える企業向け、定員10名",
+      "added": "2026-11-08"
+    },
+    {
       "date": "2026-12-03",
       "start": "13:30",
       "end": "15:30",
-      "title": "女性活躍推進オンラインセミナー（最終回）",
+      "title": "女性活躍推進オンラインセミナー（女性活躍のためのマネジメントセミナー）",
       "organizer": "岩手県",
       "venue": "オンライン（Zoom）",
       "area": "オンライン",
       "fee": "無料",
       "deadline": "2026-11-26",
       "category": "jinji",
-      "url": "https://j-net21.smrj.go.jp/snavi2/articles/189688",
-      "note": "",
+      "url": "https://www.pref.iwate.jp/kurashikankyou/seishounendanjo/1004930/1044171/1100365.html",
+      "note": "職場の見えない壁に気づき、働き続けられる組織をつくる。シリーズ最終回、定員70名",
       "added": "2026-11-05",
       "id": "2026-12-03-15"
     },
@@ -290,6 +354,22 @@
       "id": "2026-12-10-18"
     },
     {
+      "id": "2026-12-10-shukuhaku-keiei",
+      "date": "2026-12-10",
+      "start": "13:30",
+      "end": "15:50",
+      "title": "宿泊事業者向け経営力強化セミナー",
+      "organizer": "岩手県・岩手県観光協会",
+      "venue": "キオクシア アイーナ 8階 研修室812",
+      "area": "盛岡",
+      "fee": "告知ページで確認",
+      "deadline": "2026-11-26",
+      "category": "sangyo",
+      "url": "https://hanamaki-cci.or.jp/2026/11/06/%E3%80%90%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%80%91%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E5%AE%BF%E6%B3%8A%E4%BA%8B%E6%A5%AD%E8%80%85%E5%90%91%E3%81%91%E7%B5%8C%E5%96%B6%E5%8A%9B%E5%BC%B7/",
+      "note": "ホテル・旅館の立て直し手法の講演と、平泉町の事業者による経営革新計画の事例紹介。申込はFAXかメール",
+      "added": "2026-11-08"
+    },
+    {
       "date": "2026-12-10",
       "start": "14:00",
       "end": "16:00",
@@ -320,6 +400,38 @@
       "note": "南部美人・久慈社長の講演とネットワーキング。定員50名",
       "added": "2026-11-05",
       "id": "2026-12-11-20"
+    },
+    {
+      "id": "2026-12-16-shogaisha-koyou",
+      "date": "2026-12-16",
+      "start": "13:30",
+      "end": "15:20",
+      "title": "障がい者雇用促進セミナー",
+      "organizer": "岩手県",
+      "venue": "オンライン（Zoom）",
+      "area": "オンライン",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/koyou/1057552/1059631.html",
+      "note": "法定雇用率引上げへの対応、受入れ準備と職場づくり、県内優良事業所の講演。人事・採用担当向け、30名程度",
+      "added": "2026-11-08"
+    },
+    {
+      "id": "2026-12-18-yuki-nogyo",
+      "date": "2026-12-18",
+      "start": "13:30",
+      "end": "16:30",
+      "title": "岩手県有機農業ステップアップ研修会",
+      "organizer": "岩手県・いわてグリーン農業推進会議",
+      "venue": "岩手県農業共済組合本所 2階大会議室（花巻市）",
+      "area": "県南",
+      "fee": "無料",
+      "deadline": "2026-11-30",
+      "category": "sangyo",
+      "url": "https://j-net21.smrj.go.jp/snavi2/articles/194847",
+      "note": "有機農業の土づくりの考え方と県内の取組事例。定員約100名",
+      "added": "2026-11-08"
     }
   ]
 }
