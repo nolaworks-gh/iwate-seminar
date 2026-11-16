@@ -1,5 +1,5 @@
 {
-  "note": "毎週の収集で巡回する情報源。url が null のものは収集時に公式サイトを検索して確かめ、見つかれば url を埋めること。",
+  "note": "毎週の収集で巡回する情報源。url は 2026-11-16 に運営者が確認したもの。url が null のものは検索で拾えた告知だけ扱う。",
   "sources": [
     {
       "group": "集約サイト",
@@ -25,7 +25,7 @@
     {
       "group": "商工会議所・商工会",
       "name": "一関商工会議所",
-      "url": null
+      "url": "https://ichinoseki-cci.com/"
     },
     {
       "group": "商工会議所・商工会",
@@ -39,43 +39,50 @@
     },
     {
       "group": "商工会議所・商工会",
-      "name": "水沢商工会議所",
-      "url": null
+      "name": "奥州商工会議所（旧 水沢商工会議所）",
+      "url": "https://oshucci.com/"
     },
     {
       "group": "商工会議所・商工会",
       "name": "宮古商工会議所",
-      "url": null
+      "url": "http://www.miyacci.or.jp/"
     },
     {
       "group": "商工会議所・商工会",
       "name": "釜石商工会議所",
-      "url": null
+      "url": "http://kamaishi-cci.or.jp/"
     },
     {
       "group": "商工会議所・商工会",
       "name": "大船渡商工会議所",
-      "url": null
+      "url": "https://ofunatocci.or.jp/"
     },
     {
       "group": "商工会議所・商工会",
       "name": "久慈商工会議所",
-      "url": null
+      "url": "https://www.kujicci-iwate.jp/"
     },
     {
       "group": "商工会議所・商工会",
-      "name": "二戸商工会議所",
-      "url": null
+      "name": "二戸市商工会",
+      "url": null,
+      "note": "公式サイトにセミナー情報の載るページが見つからない（2026-11-16 運営者確認）。検索で拾えた告知だけ扱う"
     },
     {
       "group": "商工会議所・商工会",
       "name": "岩手県商工会連合会",
-      "url": null
+      "url": null,
+      "note": "公式サイトにセミナー情報の載るページが見つからない（2026-11-16 運営者確認）。検索で拾えた告知だけ扱う"
     },
     {
       "group": "県・市町村・支援機関",
       "name": "岩手県（イベント・講座）",
       "url": "https://www.pref.iwate.jp/event/kouza/"
+    },
+    {
+      "group": "県・市町村・支援機関",
+      "name": "岩手県（産業・雇用）",
+      "url": "https://www.pref.iwate.jp/sangyoukoyou/index.html"
     },
     {
       "group": "県・市町村・支援機関",
@@ -95,12 +102,12 @@
     {
       "group": "県・市町村・支援機関",
       "name": "岩手県工業技術センター",
-      "url": null
+      "url": "https://www2.pref.iwate.jp/~kiri/"
     },
     {
       "group": "県・市町村・支援機関",
       "name": "岩手県南技術研究センター（一関）",
-      "url": null
+      "url": "http://sirc.or.jp/"
     },
     {
       "group": "県・市町村・支援機関",
@@ -115,7 +122,7 @@
     {
       "group": "県・市町村・支援機関",
       "name": "ジェトロ岩手",
-      "url": null
+      "url": "https://www.jetro.go.jp/jetro/japan/iwate/"
     },
     {
       "group": "県・市町村・支援機関",
@@ -125,27 +132,52 @@
     {
       "group": "県・市町村・支援機関",
       "name": "東北経済産業局（東北全域対象のセミナーのみ）",
-      "url": null
+      "url": "https://www.tohoku.meti.go.jp/index.html"
     },
     {
       "group": "金融機関・公庫",
       "name": "岩手銀行",
-      "url": null
+      "url": "https://www.iwatebank.co.jp/"
     },
     {
       "group": "金融機関・公庫",
       "name": "東北銀行",
-      "url": null
+      "url": "https://www.tohoku-bank.co.jp/"
     },
     {
       "group": "金融機関・公庫",
       "name": "北日本銀行",
-      "url": null
+      "url": "https://www.kitagin.co.jp/"
     },
     {
       "group": "金融機関・公庫",
-      "name": "県内信用金庫（盛岡・宮古・一関・北上・花巻・水沢・気仙沼…）",
-      "url": null
+      "name": "盛岡信用金庫",
+      "url": "https://www.shinkin.co.jp/morishin/index.shtml"
+    },
+    {
+      "group": "金融機関・公庫",
+      "name": "宮古信用金庫",
+      "url": "https://www.shinkin.co.jp/i-miyako/"
+    },
+    {
+      "group": "金融機関・公庫",
+      "name": "一関信用金庫",
+      "url": "http://ichinoseki-shinkin.jp/"
+    },
+    {
+      "group": "金融機関・公庫",
+      "name": "北上信用金庫",
+      "url": "https://www.shinkin.co.jp/kitakami/"
+    },
+    {
+      "group": "金融機関・公庫",
+      "name": "花巻信用金庫",
+      "url": "https://www.shinkin.co.jp/hanamaki/"
+    },
+    {
+      "group": "金融機関・公庫",
+      "name": "水沢信用金庫",
+      "url": "http://www.mizusawashinkin.co.jp/"
     },
     {
       "group": "金融機関・公庫",
@@ -155,7 +187,7 @@
     {
       "group": "民間・団体",
       "name": "岩手県中小企業家同友会",
-      "url": null
+      "url": "https://iwate.doyu.jp/"
     },
     {
       "group": "民間・団体",
@@ -175,7 +207,7 @@
     {
       "group": "民間・団体",
       "name": "岩手県立大学 地域連携",
-      "url": null
+      "url": "https://www.iwate-pu.ac.jp/news/pl-event"
     }
   ]
 }
