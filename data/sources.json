@@ -86,6 +86,12 @@
     },
     {
       "group": "県・市町村・支援機関",
+      "name": "スタートアップいわて（岩手県の起業・創業ポータル、イベント・セミナー一覧）",
+      "url": "https://www.startup-iwate.pref.iwate.jp/support_list/?f=&support-area=&support-town=&support-cat%5B%5D=cat-03",
+      "note": "運営：岩手県商工観光部経営支援課。県内の商工会・支援センターの創業系セミナーが集まる"
+    },
+    {
+      "group": "県・市町村・支援機関",
       "name": "いわて産業振興センター（岩手県よろず支援拠点）",
       "url": "https://www.joho-iwate.or.jp/"
     },
