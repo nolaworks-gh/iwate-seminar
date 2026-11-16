@@ -258,6 +258,38 @@
       "added": "2026-11-16"
     },
     {
+      "id": "2026-11-20-kitagin-fukugyo1",
+      "date": "2026-11-20",
+      "start": "15:00",
+      "end": "16:00",
+      "title": "副業人材活用オンラインセミナー（第1回 技術継承）",
+      "organizer": "北日本銀行（協力：パーソルキャリア）",
+      "venue": "オンライン（Microsoft Teams）",
+      "area": "オンライン",
+      "fee": "無料",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://www.kitagin.co.jp/corporation/manage/meeting_seminar/",
+      "note": "副業人材の活用の基本と、属人化した技術・ノウハウを副業人材の力で引き継いだ事例を紹介する。",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "2026-11-24-kitakami-kyoryoku",
+      "date": "2026-11-24",
+      "start": "09:30",
+      "end": "11:00",
+      "title": "協力会社募集説明会　半導体工場向け搬送設備工事",
+      "organizer": "北上市",
+      "venue": "北上市産業支援センター 研修会議室A・B",
+      "area": "県南",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "sangyo",
+      "url": "https://www.kitakamicci.jp/%e5%8d%94%e5%8a%9b%e4%bc%9a%e7%a4%be%e5%8b%9f%e9%9b%86%e8%aa%ac%e6%98%8e%e4%bc%9a%e3%80%80%ef%bd%9e%e5%8d%8a%e5%b0%8e%e4%bd%93%e5%b7%a5%e5%a0%b4%e5%90%91%e3%81%91%e6%90%ac%e9%80%81%e8%a8%ad%e5%82%99/",
+      "note": "市内の半導体工場の搬送設備工事（機械据付・電気工事・調整）の施工協力会社を募る説明会。施工実績のある企業が対象。",
+      "added": "2026-11-16"
+    },
+    {
       "id": "2026-11-24-seiei-ai-kuji",
       "date": "2026-11-24",
       "title": "生衛業 生成AI導入勉強会（久慈会場）",
@@ -338,6 +370,22 @@
       "added": "2026-11-16"
     },
     {
+      "id": "2026-11-25-jfc-socialbiz",
+      "date": "2026-11-25",
+      "start": "14:00",
+      "end": "15:30",
+      "title": "ソーシャルビジネスで地域貢献　課題解決セミナー",
+      "organizer": "日本政策金融公庫 一関支店・気仙ソーシャルビジネスネットワーク",
+      "venue": "大船渡商工会議所 1階",
+      "area": "沿岸",
+      "fee": "無料",
+      "deadline": "2026-11-23",
+      "category": "sogyo",
+      "url": "https://direct.jfc.go.jp/w112_SeminarApply?id=42cb9d81-6b18-4a4f-b4d0-c45494c6dc7d",
+      "note": "NPOと地域づくりの実情や共創型の事業づくりを、事業者の講演から学ぶ。定員20名、個別相談の申込みも可。",
+      "added": "2026-11-16"
+    },
+    {
       "date": "2026-11-25",
       "start": "15:00",
       "end": "16:00",
@@ -354,6 +402,22 @@
       "id": "2026-11-25-10"
     },
     {
+      "id": "2026-11-26-doyu-keiken",
+      "date": "2026-11-26",
+      "start": "13:00",
+      "end": "20:30",
+      "title": "第23回経営研究集会",
+      "organizer": "岩手県中小企業家同友会",
+      "venue": "オガールプラザ（紫波町）ほか",
+      "area": "盛岡",
+      "fee": "11,000円（基調講演・分科会のみ5,000円）",
+      "deadline": "2026-11-19",
+      "category": "keiei",
+      "url": "https://iwate.doyu.jp/event/%e5%b2%a9%e6%89%8b%e7%9c%8c%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e5%ae%b6%e5%90%8c%e5%8f%8b%e4%bc%9a%e3%80%80%e7%ac%ac%ef%bc%92%ef%bc%93%e5%9b%9e%e7%b5%8c%e5%96%b6%e7%a0%94%e7%a9%b6%e9%9b%86%e4%bc%9a/",
+      "note": "社員を大切にする経営をテーマにした基調講演と、危機管理・地域エネルギーなど4つの分科会。夜は懇親会。",
+      "added": "2026-11-16"
+    },
+    {
       "id": "2026-11-26-josei-shushu",
       "date": "2026-11-26",
       "start": "14:00",
@@ -368,6 +432,22 @@
       "url": "https://j-net21.smrj.go.jp/snavi2/articles/189687",
       "note": "経営者・人事担当向けの会場型。いわて女性活躍企業等認定の要件研修に該当、定員30名",
       "added": "2026-11-09"
+    },
+    {
+      "id": "2026-11-26-kitagin-fukugyo2",
+      "date": "2026-11-26",
+      "start": "15:00",
+      "end": "16:00",
+      "title": "副業人材活用オンラインセミナー（第2回 販路拡大）",
+      "organizer": "北日本銀行（協力：パーソルキャリア）",
+      "venue": "オンライン（Microsoft Teams）",
+      "area": "オンライン",
+      "fee": "無料",
+      "deadline": null,
+      "category": "hanro",
+      "url": "https://www.kitagin.co.jp/corporation/manage/meeting_seminar/",
+      "note": "副業人材の活用の基本と、副業人材を生かして新規開拓・営業強化を進めた事例を紹介する。",
+      "added": "2026-11-16"
     },
     {
       "date": "2026-11-27",
@@ -498,6 +578,22 @@
       "added": "2026-11-16"
     },
     {
+      "id": "2026-12-03-kitagin-fukugyo3",
+      "date": "2026-12-03",
+      "start": "15:00",
+      "end": "16:00",
+      "title": "副業人材活用オンラインセミナー（第3回 外国人採用）",
+      "organizer": "北日本銀行（協力：パーソルキャリア）",
+      "venue": "オンライン（Microsoft Teams）",
+      "area": "オンライン",
+      "fee": "無料",
+      "deadline": null,
+      "category": "jinji",
+      "url": "https://www.kitagin.co.jp/corporation/manage/meeting_seminar/",
+      "note": "副業人材の活用の基本と、外国人材の採用・定着に副業人材を生かした事例を紹介する。",
+      "added": "2026-11-16"
+    },
+    {
       "date": "2026-12-04",
       "start": "13:30",
       "end": "16:30",
@@ -530,6 +626,38 @@
       "added": "2026-11-16"
     },
     {
+      "id": "2026-12-07-oshu-sogyo",
+      "date": "2026-12-07",
+      "start": "13:30",
+      "end": "16:30",
+      "title": "2026 創業セミナー",
+      "organizer": "奥州商工会議所",
+      "venue": "水沢グランドホテル",
+      "area": "県南",
+      "fee": "告知ページで確認",
+      "deadline": null,
+      "category": "sogyo",
+      "url": "https://oshucci.com/2026/10/29/%ef%bc%92%ef%bc%90%ef%bc%92%ef%bc%96%e3%80%80%e5%89%b5%e6%a5%ad%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc/",
+      "note": "中小企業診断士が講師。創業予定・創業間もない人や新規事業を考える事業者向け。申込みはチラシの二次元コードから。",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "2026-12-08-shotengai",
+      "date": "2026-12-08",
+      "start": "13:30",
+      "end": "15:30",
+      "title": "商店街の未来を切り拓く！地域を巻き込む仕掛けとリーダーの役割",
+      "organizer": "岩手県商店街振興組合連合会",
+      "venue": "LiRiO 3階イベントホール（盛岡市大通、オンライン併用）",
+      "area": "盛岡",
+      "fee": "無料",
+      "deadline": null,
+      "category": "keiei",
+      "url": "https://www.ginga.or.jp/?p=17288",
+      "note": "十条銀座商店街の事例から、地域を巻き込む活性化策と担い手の役割を学ぶ。商店街の役員・後継者向けだが誰でも参加可。",
+      "added": "2026-11-16"
+    },
+    {
       "date": "2026-12-09",
       "start": "13:30",
       "end": "16:30",
@@ -544,6 +672,38 @@
       "note": "会場のみ。定員50名",
       "added": "2026-11-05",
       "id": "2026-12-09-17"
+    },
+    {
+      "id": "2026-12-09-kitakami-roudou",
+      "date": "2026-12-09",
+      "start": "14:00",
+      "end": "16:00",
+      "title": "労働法改正対応と実務のギモン",
+      "organizer": "北上商工会議所",
+      "venue": "北上オフィスプラザ セミナールーム",
+      "area": "県南",
+      "fee": "無料",
+      "deadline": "2026-12-02",
+      "category": "jinji",
+      "url": "https://www.kitakamicci.jp/r8roudouhoukaisei/",
+      "note": "社会保険労務士が、これまでの働き方改革関連の改正と2026年度施行分（カスハラ防止など）、今後の労基法改正の動きを解説。",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "2026-12-10-ipu-jidoka",
+      "date": "2026-12-10",
+      "start": "13:00",
+      "end": "16:00",
+      "title": "非エンジニアのための業務自動化入門　AI×プリザンター×RPA",
+      "organizer": "岩手県立大学 研究・地域連携室",
+      "venue": "岩手県立大学 地域連携棟2階 システム実習室（滝沢市）",
+      "area": "盛岡",
+      "fee": "3,000円（学生無料）",
+      "deadline": "2026-11-30",
+      "category": "dx",
+      "url": "https://www.iwate-pu.ac.jp/research/lecture/digital/pg-2383",
+      "note": "ローコードツールとAIで在庫管理アプリを作り、RPAでExcel転記などの定型作業を自動化する実習。定員10名。",
+      "added": "2026-11-16"
     },
     {
       "date": "2026-12-10",
@@ -594,6 +754,22 @@
       "id": "2026-12-10-19"
     },
     {
+      "id": "2026-12-10-oshu-iwatedai-forum",
+      "date": "2026-12-10",
+      "start": "14:00",
+      "end": "17:00",
+      "title": "地域企業×岩手大学×奥州連携フォーラム2026",
+      "organizer": "奥州市・岩手大学",
+      "venue": "プラザイン水沢",
+      "area": "県南",
+      "fee": "無料（交流会は5,000円）",
+      "deadline": "2026-12-02",
+      "category": "jinji",
+      "url": "https://www.ccrd.iwate-u.ac.jp/news/8277/",
+      "note": "人が集まる会社づくりがテーマ。採用前からの学生との関係づくりの講演や企業事例を紹介。ものづくり企業と支援機関向け。",
+      "added": "2026-11-16"
+    },
+    {
       "date": "2026-12-11",
       "start": "13:30",
       "end": "16:30",
@@ -640,6 +816,22 @@
       "url": "https://j-net21.smrj.go.jp/snavi2/articles/194847",
       "note": "有機農業の土づくりの考え方と県内の取組事例。定員約100名",
       "added": "2026-11-09"
+    },
+    {
+      "id": "2026-12-18-kazoku-keiei",
+      "date": "2026-12-18",
+      "start": "13:30",
+      "end": "15:30",
+      "title": "令和8年度 家族経営協定セミナー",
+      "organizer": "岩手県（農業普及技術課）",
+      "venue": "サンセール盛岡 3階（奥州・大船渡・久慈にサテライト会場）",
+      "area": "盛岡",
+      "fee": "告知ページで確認",
+      "deadline": "2026-12-07",
+      "category": "sangyo",
+      "url": "https://www.pref.iwate.jp/event/kouza/1103179.html",
+      "note": "農業の家族経営協定の制度説明と講演、県内農家の事例紹介。農業者や関係団体向け。",
+      "added": "2026-11-16"
     },
     {
       "id": "2027-01-19-cci-keikaku1",
