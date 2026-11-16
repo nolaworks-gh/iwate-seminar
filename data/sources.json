@@ -102,6 +102,12 @@
     },
     {
       "group": "県・市町村・支援機関",
+      "name": "北上市産業支援センター",
+      "url": "https://kitakamiisc.jp/",
+      "note": "robots.txt で自動取得を拒否（2026-11-16確認）。直接は開かず、スタートアップいわて等の他ページ経由で拾う"
+    },
+    {
+      "group": "県・市町村・支援機関",
       "name": "岩手県中小企業団体中央会",
       "url": "https://www.ginga.or.jp/category/event/"
     },
