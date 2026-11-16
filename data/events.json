@@ -162,6 +162,22 @@
       "added": "2026-11-09"
     },
     {
+      "id": "2026-11-18-seiei-ai-morioka",
+      "date": "2026-11-18",
+      "title": "生衛業 生成AI導入勉強会（盛岡会場）",
+      "venue": "岩手県美容会館／オンライン",
+      "area": "盛岡",
+      "note": "飲食・宿泊・理美容・クリーニングなど生衛業の経営者や従業員向け。生成AIでPOSなどのデータを分析する入門。スマホかPC持参で操作体験可",
+      "start": "14:00",
+      "end": "16:00",
+      "organizer": "岩手県生活衛生営業指導センター",
+      "fee": "無料",
+      "deadline": null,
+      "category": "sangyo",
+      "url": "https://www.iwate-navi.jp/11044",
+      "added": "2026-11-16"
+    },
+    {
       "id": "2026-11-19-mental-health",
       "date": "2026-11-19",
       "start": "10:00",
@@ -223,6 +239,38 @@
       "category": "hanro",
       "url": "https://www.ccimorioka.or.jp/news/detail?id=359",
       "note": "盛岡市内の小規模事業者向け。事例をもとに投稿の方針を見直し、参加者の投稿をその場で添削する。定員30名",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "2026-11-19-seiei-ai-ofunato",
+      "date": "2026-11-19",
+      "title": "生衛業 生成AI導入勉強会（大船渡会場）",
+      "venue": "おおふなぽーと",
+      "area": "沿岸",
+      "note": "飲食・宿泊・理美容・クリーニングなど生衛業の経営者や従業員向け。生成AIでPOSなどのデータを分析する入門。スマホかPC持参で操作体験可",
+      "start": "14:00",
+      "end": "16:00",
+      "organizer": "岩手県生活衛生営業指導センター",
+      "fee": "無料",
+      "deadline": null,
+      "category": "sangyo",
+      "url": "https://www.iwate-navi.jp/11044",
+      "added": "2026-11-16"
+    },
+    {
+      "id": "2026-11-24-seiei-ai-kuji",
+      "date": "2026-11-24",
+      "title": "生衛業 生成AI導入勉強会（久慈会場）",
+      "venue": "久慈グランドホテル",
+      "area": "県北",
+      "note": "飲食・宿泊・理美容・クリーニングなど生衛業の経営者や従業員向け。生成AIでPOSなどのデータを分析する入門。スマホかPC持参で操作体験可",
+      "start": "14:00",
+      "end": "16:00",
+      "organizer": "岩手県生活衛生営業指導センター",
+      "fee": "無料",
+      "deadline": null,
+      "category": "sangyo",
+      "url": "https://www.iwate-navi.jp/11044",
       "added": "2026-11-16"
     },
     {
