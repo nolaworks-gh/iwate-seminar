@@ -19,7 +19,7 @@
     {"group": "県・市町村・支援機関", "name": "岩手県（イベント・講座）", "url": "https://www.pref.iwate.jp/event/kouza/"},
     {"group": "県・市町村・支援機関", "name": "いわて産業振興センター（岩手県よろず支援拠点）", "url": "https://www.joho-iwate.or.jp/"},
     {"group": "県・市町村・支援機関", "name": "盛岡市産業支援センター", "url": "https://www.moriokaisc.jp/category/news/"},
-    {"group": "県・市町村・支援機関", "name": "岩手県中小企業団体中央会", "url": null},
+    {"group": "県・市町村・支援機関", "name": "岩手県中小企業団体中央会", "url": "https://www.ginga.or.jp/category/event/"},
     {"group": "県・市町村・支援機関", "name": "岩手県工業技術センター", "url": null},
     {"group": "県・市町村・支援機関", "name": "岩手県南技術研究センター（一関）", "url": null},
     {"group": "県・市町村・支援機関", "name": "岩手県事業承継・引継ぎ支援センター", "url": "https://iwate-hikitsugi.go.jp/"},
@@ -36,6 +36,7 @@
 
     {"group": "民間・団体", "name": "岩手県中小企業家同友会", "url": null},
     {"group": "民間・団体", "name": "盛岡法人会ほか県内法人会", "url": "http://iwate-ho.jp/morioka/"},
+    {"group": "民間・団体", "name": "岩手県建設業協会 経営支援センター（建設業向け経営革新講座）", "url": "https://www.iwaken.or.jp/keieishien/"},
     {"group": "民間・団体", "name": "岩手大学 研究支援・産学連携センター／INS", "url": "https://www.ccrd.iwate-u.ac.jp/"},
     {"group": "民間・団体", "name": "岩手県立大学 地域連携", "url": null}
   ]
