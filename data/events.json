@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "events": [
     {
       "date": "2026-11-11",
@@ -31,7 +31,7 @@
       "category": "jinji",
       "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
       "note": "30分のオンラインセミナー。最低賃金引上げに合わせた給与計算の確認点",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "date": "2026-11-12",
@@ -127,7 +127,7 @@
       "category": "keiei",
       "url": "https://hanamaki-cci.or.jp/2026/09/14/%e3%80%90%e3%82%bb%e3%83%9f%e3%83%8a%e3%83%bc%e3%80%91%e3%82%82%e3%81%97%e3%82%82%e3%81%ab%e5%bc%b7%e3%81%84%e4%bc%9a%e7%a4%be%e3%82%92%e3%81%a4%e3%81%8f%e3%82%8b%ef%bc%81%e3%80%8c%e4%b8%ad/",
       "note": "災害時に事業を止めないための計画づくりの基本と、事業継続力強化計画の制度を中小機構の専門家が解説。先着20名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-11-18",
@@ -159,7 +159,7 @@
       "category": "jinji",
       "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
       "note": "30分のオンラインセミナー。人手確保に向けた雇用管理の見直し",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "id": "2026-11-19-mental-health",
@@ -175,7 +175,7 @@
       "category": "jinji",
       "url": "https://www.pref.iwate.jp/kurashikankyou/fukushi/ryouiku/1086568.html",
       "note": "経営者・人事労務担当向け。カスハラを含む職場のハラスメント防止と対応、企業の事例紹介",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-11-19",
@@ -207,7 +207,7 @@
       "category": "hanro",
       "url": "https://www.joho-iwate.or.jp/news/16932",
       "note": "臨床工学技士が現場のニーズを発表し、医療分野に関心のあるものづくり・IT企業と交流する。神戸大学の基調講演あり",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2026-11-19-cci-instagram",
@@ -223,7 +223,7 @@
       "category": "hanro",
       "url": "https://www.ccimorioka.or.jp/news/detail?id=359",
       "note": "盛岡市内の小規模事業者向け。事例をもとに投稿の方針を見直し、参加者の投稿をその場で添削する。定員30名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2026-11-25-gaikokujin",
@@ -239,7 +239,7 @@
       "category": "jinji",
       "url": "https://www.ginga.or.jp/2026/10/16/17188/",
       "note": "育成就労制度の開始に向け、監理団体・組合が準備すべき実務を解説。後半は盛岡市保健所による結核対策の話",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2026-11-25-hatarakikata-driver",
@@ -255,7 +255,7 @@
       "category": "jinji",
       "url": "https://hatarakikatakaikaku.mhlw.go.jp/consultation/iwate",
       "note": "運送業などドライバーを雇う事業者向けの労働時間ルール解説。30分",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "id": "2026-11-25-chuokai-ai",
@@ -271,7 +271,7 @@
       "category": "dx",
       "url": "https://www.ginga.or.jp/2026/11/04/17245/",
       "note": "生成AIの基礎と中小企業での活用例を学び、実際にツールを操作する演習もある。会場30名、PC持参推奨",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2026-11-25-gx-kitakami",
@@ -287,7 +287,7 @@
       "category": "keiei",
       "url": "https://www.joho-iwate.or.jp/wp/assets/uploads/2026/09/R8_GXセミナー_チラシ最終稿.pdf",
       "note": "J-クレジット制度の概要と活用法を東北経産局が解説。講演後に1社20分の無料個別相談あり、定員20名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-11-25",
@@ -319,7 +319,7 @@
       "category": "jinji",
       "url": "https://j-net21.smrj.go.jp/snavi2/articles/189687",
       "note": "経営者・人事担当向けの会場型。いわて女性活躍企業等認定の要件研修に該当、定員30名",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "date": "2026-11-27",
@@ -351,7 +351,7 @@
       "category": "sangyo",
       "url": "https://www.joho-iwate.or.jp/news/17021",
       "note": "放射光とAIを使った創薬、ライフサイエンス機器の産業集積など、加速器関連産業への参入を見据えた講演。会員外も参加可",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-12-02",
@@ -415,7 +415,7 @@
       "category": "sangyo",
       "url": "https://j-net21.smrj.go.jp/snavi2/articles/194738",
       "note": "分解された自動車部品を見学し業界・技術動向を学ぶ。次世代車市場への参入を考える企業向け、定員10名",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "date": "2026-12-03",
@@ -447,7 +447,7 @@
       "category": "keiei",
       "url": "https://www.joho-iwate.or.jp/wp/assets/uploads/2026/09/R8_GXセミナー_チラシ最終稿.pdf",
       "note": "J-クレジット制度の概要と最新動向の講演に加え、専門家の無料個別相談あり。定員20名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-12-04",
@@ -479,7 +479,7 @@
       "category": "sangyo",
       "url": "https://www.iwaken.or.jp/keieishien/data/r08kouza03.pdf",
       "note": "県内の建設業許可業者の経営者・幹部向け。経営悪化の兆候の見方、資金繰りや金融機関との関係づくり、国の支援策を使った改善。定員50名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "date": "2026-12-09",
@@ -527,7 +527,7 @@
       "category": "sangyo",
       "url": "https://hanamaki-cci.or.jp/2026/11/06/%E3%80%90%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC%E3%80%91%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E5%AE%BF%E6%B3%8A%E4%BA%8B%E6%A5%AD%E8%80%85%E5%90%91%E3%81%91%E7%B5%8C%E5%96%B6%E5%8A%9B%E5%BC%B7/",
       "note": "ホテル・旅館の立て直し手法の講演と、平泉町の事業者による経営革新計画の事例紹介。申込はFAXかメール",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "date": "2026-12-10",
@@ -575,7 +575,7 @@
       "category": "jinji",
       "url": "https://www.pref.iwate.jp/sangyoukoyou/koyouroudou/koyou/1057552/1059631.html",
       "note": "法定雇用率引上げへの対応、受入れ準備と職場づくり、県内優良事業所の講演。人事・採用担当向け、30名程度",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "id": "2026-12-18-yuki-nogyo",
@@ -591,7 +591,7 @@
       "category": "sangyo",
       "url": "https://j-net21.smrj.go.jp/snavi2/articles/194847",
       "note": "有機農業の土づくりの考え方と県内の取組事例。定員約100名",
-      "added": "2026-11-08"
+      "added": "2026-11-09"
     },
     {
       "id": "2027-01-19-cci-keikaku1",
@@ -607,7 +607,7 @@
       "category": "keiei",
       "url": "https://www.ccimorioka.or.jp/news/detail?id=387",
       "note": "小規模事業者向けの2日間講座の初日。市場と財務から自社を分析する。2日間とも出席が条件、定員30名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2027-01-22-cci-shortvideo",
@@ -623,7 +623,7 @@
       "category": "hanro",
       "url": "https://www.ccimorioka.or.jp/news/detail?id=388",
       "note": "盛岡市内の小規模事業者向け。来店につながる動画の作り方をスマホで撮影・投稿まで体験し、販促計画も立てる。定員30名",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     },
     {
       "id": "2027-02-02-cci-keikaku2",
@@ -639,7 +639,7 @@
       "category": "keiei",
       "url": "https://www.ccimorioka.or.jp/news/detail?id=387",
       "note": "2日間講座の2日目。売上・コスト、資金、人員の計画を立てる。決算書等を持参",
-      "added": "2026-11-15"
+      "added": "2026-11-16"
     }
   ]
 }
