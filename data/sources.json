@@ -13,6 +13,12 @@
       "note": "二次情報。岩手県内開催のものだけ拾い、必ず主催者の告知ページで日時・締切を確かめてから載せる。url には主催者のページを書く"
     },
     {
+      "group": "集約サイト",
+      "name": "イーハトーブプラットフォームメーリングリスト（いわて産業振興センター、Gmailで受信）",
+      "url": null,
+      "note": "メール。差出人 platform@m1.circle.ne.jp、件名「[platform」。メール内のリンク先など主催者の告知ページで確認できたものだけ掲載する"
+    },
+    {
       "group": "商工会議所・商工会",
       "name": "盛岡商工会議所",
       "url": "https://www.ccimorioka.or.jp/news/"
@@ -86,6 +92,12 @@
     },
     {
       "group": "県・市町村・支援機関",
+      "name": "スタートアップいわて（岩手県の起業・創業ポータル、イベント・セミナー一覧）",
+      "url": "https://www.startup-iwate.pref.iwate.jp/support_list/?f=&support-area=&support-town=&support-cat%5B%5D=cat-03",
+      "note": "運営：岩手県商工観光部経営支援課。県内の商工会・支援センターの創業系セミナーが集まる"
+    },
+    {
+      "group": "県・市町村・支援機関",
       "name": "いわて産業振興センター（岩手県よろず支援拠点）",
       "url": "https://www.joho-iwate.or.jp/"
     },
@@ -93,6 +105,12 @@
       "group": "県・市町村・支援機関",
       "name": "盛岡市産業支援センター",
       "url": "https://www.moriokaisc.jp/category/news/"
+    },
+    {
+      "group": "県・市町村・支援機関",
+      "name": "北上市産業支援センター",
+      "url": "https://kitakamiisc.jp/",
+      "note": "robots.txt で自動取得を拒否（2026-11-16確認）。直接は開かず、スタートアップいわて等の他ページ経由で拾う"
     },
     {
       "group": "県・市町村・支援機関",
