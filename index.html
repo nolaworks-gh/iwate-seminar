@@ -8,29 +8,32 @@
 <meta property="og:title" content="いわてセミナー暦">
 <meta property="og:description" content="岩手県内の企業向けセミナーをまとめて検索">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Old+Mincho:wght@600;900&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap">
 <style>
-/* Layout: 検索バー → 絞り込み → 一覧／月表示の切替。藍の帳面に、締切だけ朱で示す */
+/* Layout: 県旗のなんど色の帯（題字）→ 検索 → 絞り込み → 一覧／月表示。書体はBIZ UDPゴシックに統一し、色は締切だけ朱で示す */
 :root{
-  --bg:#f6f7f9; --paper:#ffffff; --ink:#1c2430; --muted:#5d6878; --line:#d9dee6;
-  --ai:#2c4a7c; --ai-soft:#e6ecf6; --shu:#b5432f; --ok:#2f6b4f;
-  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --nando:#4a6a67; --nando-deep:#4a6a67; --nando-soft:#e4ecea; --on-nando:#ffffff;
+  --bg:#f3f6f5; --paper:#ffffff; --ink:#1f2b2a; --muted:#566664; --line:#d2dcda;
+  --ai:var(--nando); --ai-soft:var(--nando-soft); --shu:#b5432f; --ok:#2f6b4f;
   --body:"BIZ UDPGothic","Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,monospace;
-  --c-keiei:#2c4a7c; --c-jinji:#7a4f9a; --c-dx:#1f7a7a; --c-hanro:#a0662a; --c-sec:#b5432f; --c-sangyo:#4f6b2f; --c-sogyo:#8a6d1f;
+  --display:var(--body); --mono:var(--body);
+  --c-keiei:#4a6a67; --c-jinji:#6b5a85; --c-dx:#2c7480; --c-hanro:#94672e; --c-sec:#a8463a; --c-sangyo:#557a3d; --c-sogyo:#7a6f30;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#12161d; --paper:#1a2029; --ink:#e4e8ef; --muted:#9aa5b5; --line:#2e3644;
-  --ai:#8fb0e6; --ai-soft:#22304a; --shu:#ec8a74; --ok:#7cc4a0;
-  --c-keiei:#8fb0e6; --c-jinji:#c4a0e0; --c-dx:#6cc8c8; --c-hanro:#e0aa6c; --c-sec:#ec8a74; --c-sangyo:#a8c47c; --c-sogyo:#e0c46c; color-scheme:dark}}
+  --nando:#93b5b0; --nando-deep:#29403f; --nando-soft:#223231; --on-nando:#eef4f3;
+  --bg:#131a19; --paper:#1a2322; --ink:#e2eae8; --muted:#9db0ad; --line:#2c3a39;
+  --shu:#ec8a74; --ok:#7cc4a0;
+  --c-keiei:#93b5b0; --c-jinji:#bfaee0; --c-dx:#79c2cc; --c-hanro:#e0aa6c; --c-sec:#ec8a74; --c-sangyo:#a6c98a; --c-sogyo:#d8c97a; color-scheme:dark}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.65}
 [hidden]{display:none!important}
-.wrap{max-width:1040px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
-header h1{font-family:var(--display);font-weight:900;font-size:clamp(1.8rem,4.5vw,2.6rem);margin:0;letter-spacing:.03em}
-header p{margin:.3rem 0 0;color:var(--muted);max-width:64ch}
-.meta{font-size:.82rem;color:var(--muted)}
+.wrap{max-width:1040px;margin:0 auto;padding-block:24px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+.band{background:var(--nando-deep);color:var(--on-nando)}
+.band .inner{max-width:1040px;margin:0 auto;padding-block:26px 22px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:6px}
+.band h1{font-weight:700;font-size:clamp(1.7rem,4.2vw,2.4rem);margin:0;letter-spacing:.08em}
+.band p{margin:0;max-width:64ch;opacity:.92}
+.band .meta{font-size:.82rem;opacity:.8}
 .search{display:flex;gap:8px}
 .search input{flex:1;min-width:0;font:inherit;font-size:1rem;padding:10px 14px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink)}
 .filters{display:grid;gap:10px}
@@ -43,11 +46,11 @@ header p{margin:.3rem 0 0;color:var(--muted);max-width:64ch}
 label.toggle{font-size:.86rem;display:inline-flex;gap:6px;align-items:center;cursor:pointer}
 .views{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;border-bottom:1px solid var(--line);flex-wrap:wrap}
 .tabs{display:flex;gap:4px}
-.tab{font-family:var(--display);font-weight:600;font-size:1.1rem;background:none;border:0;border-bottom:3px solid transparent;padding:6px 12px;color:var(--muted);cursor:pointer}
+.tab{font-weight:700;font-size:1.02rem;background:none;border:0;border-bottom:3px solid transparent;padding:6px 12px;color:var(--muted);cursor:pointer}
 .tab[aria-selected="true"]{color:var(--ink);border-color:var(--ai)}
 .count{font-size:.85rem;color:var(--muted);padding-bottom:8px}
 .monthnav{display:flex;gap:10px;align-items:center;margin-bottom:8px}
-.monthnav b{font-family:var(--display);font-size:1.15rem;min-width:7.5em;text-align:center}
+.monthnav b{font-size:1.08rem;min-width:7.5em;text-align:center}
 .monthnav button{font:inherit;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:4px;padding:2px 10px;cursor:pointer}
 .cal-scroll{overflow-x:auto}
 .cal{display:grid;grid-template-columns:repeat(7,minmax(96px,1fr));border-top:1px solid var(--line);border-left:1px solid var(--line);background:var(--paper);min-width:680px}
@@ -55,7 +58,7 @@ label.toggle{font-size:.86rem;display:inline-flex;gap:6px;align-items:center;cur
 .dow.sun{color:var(--shu)} .dow.sat{color:var(--ai)}
 .cell{min-height:92px;padding:6px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:4px;min-width:0}
 .cell.out{background:var(--bg)}
-.cell .n{font-family:var(--mono);font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.cell .n{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .cell.today .n{background:var(--shu);color:var(--paper);border-radius:4px;padding:0 5px;align-self:flex-start}
 .ev{width:100%;text-align:left;font:inherit;font-size:.74rem;line-height:1.35;background:var(--ai-soft);color:var(--ink);border:0;border-left:3px solid var(--cc);border-radius:3px;padding:3px 5px;cursor:pointer;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
 .ev.past{opacity:.5}
@@ -63,8 +66,8 @@ label.toggle{font-size:.86rem;display:inline-flex;gap:6px;align-items:center;cur
 .item{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;grid-template-columns:92px 1fr;gap:4px 16px;scroll-margin-top:16px}
 .item.flash{outline:2px solid var(--ai)}
 .item.past{opacity:.55}
-.d{font-family:var(--mono);font-variant-numeric:tabular-nums;line-height:1.3}
-.d b{display:block;font-size:1.35rem;font-weight:500}
+.d{font-variant-numeric:tabular-nums;line-height:1.3}
+.d b{display:block;font-size:1.35rem;font-weight:700;color:var(--nando)}
 .d span{font-size:.78rem;color:var(--muted)}
 .body{min-width:0;display:grid;gap:4px}
 .title{font-weight:700;font-size:1rem}
@@ -82,12 +85,12 @@ footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padd
 </style>
 </head>
 <body>
+<header class="band"><div class="inner">
+  <h1>いわてセミナー暦</h1>
+  <p>岩手県内の商工会議所・商工会、県や市町村、産業支援機関、金融機関などが開く企業向けセミナーを、まとめて探せるようにしました。</p>
+  <div class="meta" id="updated">読み込み中…</div>
+</div></header>
 <div class="wrap">
-  <header>
-    <h1>いわてセミナー暦</h1>
-    <p>岩手県内の商工会議所・商工会、県や市町村、産業支援機関、金融機関などが開く企業向けセミナーを、まとめて探せるようにしました。</p>
-    <div class="meta" id="updated">読み込み中…</div>
-  </header>
 
   <div class="search">
     <label for="q" hidden>キーワード</label>
